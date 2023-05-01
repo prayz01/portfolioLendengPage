@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+	/* colors */
+	--primaryColor: #fff;
+	--maintext: #fd1afd;
+	--secondarytext: #000;
+	--btnhover: #f008e0;
+}
+
+.dark-theme {
+	/* colors */
+	--primaryColor: #000000;
+	--maintext: #fd1afd;
+	--secondarytext: #fff;
+	--btnhover: #f008e0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'poppins', sans-serif;
+	background-color: var(--primaryColor);
+}
+
+.home {
+	height: 100vh;
+	width: 100%;
+	padding: 20px 140px;
+}
+
+/* header */
+header {
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-logo {
+	color: var(--maintext);
+}
+
+.nav {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav li {
+	list-style: none;
+	margin-left: 15px;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: var(--secondarytext);
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.nav li a:hover {
+	color: var(--maintext);
+}
+
+.header-nav .nav li a.active {
+	color: var(--maintext);
+}
+
+.header-nav .nav li a.active:hover {
+	color: var(--secondarytext);
+}
+
+.btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	font-size: 1rem;
+	color: var(--secondarytext);
+	background-color: var(--maintext);
+	font-weight: bold;
+	box-shadow: 1px 1px 10px 1px var(--btnhover);
+}
+
+.btn:hover {
+	background-color: var(--btnhover);
+}
+
+.btn:active {
+	box-shadow: 1px 1px 4px 1px var(--btnhover);
+}
+
+.header-nav {
+	width: 10%;
+}
+
+.header-btn {
+	display: inline-flex;
+}
+
+.header-btn .mode-change {
+	margin-left: 20px;
+	font-size: 2rem;
+	cursor: pointer;
+	color: var(--secondarytext);
+}
+
+/* social-icon-list */
+.social-icon-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.social-icon-list li a {
+	font-size: 2rem;
+	color: var(--maintext);
+}
+
+.social-icon-list li {
+	margin: 7px 0;
+}
+
+.social-icon-list li a:hover {
+	color: var(--secondarytext);
+}
+
+.hero-section {
+	height: 85vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.hero-section .hero-content {
+	width: 40%;
+}
+
+.hero-section .hero-content .content-text {
+	font-size: 2rem;
+	color: var(--secondarytext);
+}
+
+.hero-section .hero-content .content-text span {
+	color: var(--maintext);
+}
+
+.hero-section .hero-content .hero-btn button {
+	font-size: 1.2rem;
+	margin-top: 20px;
+}
+
+.hero-section .hero-image {
+	width: 40%;
+}
+
+.hero-image img {
+	height: 60vh;
+}
